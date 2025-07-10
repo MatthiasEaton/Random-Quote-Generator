@@ -152,27 +152,34 @@ const quotes = [
   const wikiLink = document.getElementById("wiki-link");
   const quoteBox = document.getElementById("quote-box");
   
-  // Include quoteBox in the fade elements
   const fadeElements = [quoteBox, quoteElement, authorElement, imageElement, descriptionElement];
   
-  const usedIndexes = new Set();
+  let shuffledQuotes = [];
+  let currentIndex = 0;
+  
+  // Fisher-Yates shuffle function
+  function shuffleQuotes() {
+    shuffledQuotes = [...quotes];
+    for (let i = shuffledQuotes.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledQuotes[i], shuffledQuotes[j]] = [shuffledQuotes[j], shuffledQuotes[i]];
+    }
+    currentIndex = 0;
+  }
+  
+  // Initial shuffle
+  shuffleQuotes();
   
   function generateQuote() {
-    // Remove fade classes for transition
     fadeElements.forEach(el => el.classList.remove("show"));
   
     setTimeout(() => {
-      let randomIdx;
-      do {
-        randomIdx = Math.floor(Math.random() * quotes.length);
-      } while (usedIndexes.has(randomIdx) && usedIndexes.size < quotes.length);
-  
-      if (usedIndexes.size >= quotes.length) {
-        usedIndexes.clear();
+      if (currentIndex >= shuffledQuotes.length) {
+        shuffleQuotes(); // Reshuffle when all quotes used
       }
   
-      const selected = quotes[randomIdx];
-      usedIndexes.add(randomIdx);
+      const selected = shuffledQuotes[currentIndex];
+      currentIndex++;
   
       // Update content
       quoteElement.textContent = selected.quote;
@@ -183,7 +190,6 @@ const quotes = [
       descriptionElement.textContent = selected.description;
       wikiLink.href = selected.wiki || `https://en.wikipedia.org/wiki/${encodeURIComponent(selected.author.replace(/\s/g, "_"))}`;
   
-      // Reveal and fade in
       quoteBox.style.display = "block";
       fadeElements.forEach(el => el.classList.add("show"));
     }, 300);
