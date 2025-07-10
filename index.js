@@ -100,7 +100,7 @@ const quotes = [
         author: "Margaret Mitchell",
         image: "images/mitchell.jpg",
         description: "Margaret Mitchell was an American author best known for her Pulitzer Prize-winning novel, Gone with the Wind. The book, set during the American Civil War and Reconstruction era, became a massive bestseller and was later adapted into a highly successful film. Despite her literary success, Mitchell published only one other novel during her lifetime and tragically died in a car accident in Atlanta."
-      }
+      },
     {
         quote: '“There is within the human heart a quality of intelligence which has been known to surpass that attributed to the human mind.”',
         author: "Aberjhani",
