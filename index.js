@@ -101,7 +101,48 @@ const quotes = [
         image: "images/mitchell.jpg",
         description: "Margaret Mitchell was an American author best known for her Pulitzer Prize-winning novel, Gone with the Wind. The book, set during the American Civil War and Reconstruction era, became a massive bestseller and was later adapted into a highly successful film. Despite her literary success, Mitchell published only one other novel during her lifetime and tragically died in a car accident in Atlanta."
       }
-    // Keep adding more here...
+    {
+        quote: '“There is within the human heart a quality of intelligence which has been known to surpass that attributed to the human mind.”',
+        author: "Aberjhani",
+        image: "images/aberjhani.jpg",
+        description: "Aberjhani (born Jeffery J. Lloyd July 8, 1957) is an American historian, columnist, novelist, poet, artist, and editor. Although well known for his blog articles on literature and politics, he is perhaps best known as co-author of Encyclopedia of the Harlem Renaissance and author of The River of Winged Dreams."
+      },
+      {
+        quote: '“To a mind that is still, the entire universe surrenders.”',
+        author: "Chuang Tzu",
+        image: "images/tzu.jpg",
+        description: "Chuang Tzu, also known as Zhuang Zhou, was a highly influential Chinese philosopher who lived around the 4th century BCE during the Warring States period. He is a key figure in Taoism, known for his philosophical work, the Zhuangzi, which explores themes of nature, freedom, and the limitations of human knowledge. Chuang Tzu's writings are characterized by parables, anecdotes, and paradoxes, often using humor and imaginative scenarios to convey his ideas. "
+      },
+      {
+        quote: '“Wherever you go, go with all your heart.”',
+        author: "Confucius",
+        image: "images/confucius.jpg",
+        description: "Confucius was a Chinese philosopher, teacher, and political theorist whose teachings profoundly influenced East Asian thought and culture. He is known for his emphasis on ethics, social harmony, and the importance of education. His philosophy, often referred to as Confucianism, centers on cultivating virtue through self-cultivation and fulfilling social roles."
+      },
+      {
+        quote: '“Letting go gives us freedom, and freedom is the only condition for happiness. If, in our heart, we still cling to anything - anger, anxiety, or possessions - we cannot be free.”',
+        author: "Thich Nhat Hanh",
+        image: "images/hanh.jpg",
+        description: "Thich Nhat Hanh was a globally renowned Vietnamese Buddhist monk, teacher, author, and peace activist. He was a leading figure in the field of Engaged Buddhism and popularized the practice of mindfulness in the Western world. He founded the Plum Village Tradition, a mindfulness practice center in France, and was known for his teachings on peace, compassion, and living fully in the present moment."
+      },
+      {
+        quote: '"Its not what happens to you, but how you react to it that matters."',
+        author: "Epictetus",
+        image: "images/epictetus.jpg",
+        description: "Epictetus was a prominent Greek Stoic philosopher known for his teachings on personal freedom, self-control, and acceptance of what lies beyond one's control. Born into slavery, he later became a celebrated teacher, emphasizing the importance of focusing on one's own thoughts and actions, rather than external circumstances. His core philosophy is reflected in his writings, particularly the Discourses and the Enchiridion, which were compiled by his student Arrian. "
+      },
+      {
+        quote: '“You must never be fearful about what you are doing when it’s right.”',
+        author: "Rosa Parks",
+        image: "images/parks.jpg",
+        description: "Rosa Parks was an American activist best known for her pivotal role in the Montgomery Bus Boycott, which helped spark the American Civil Rights Movement. On December 1, 1955, she famously refused to give up her bus seat to a white passenger in Montgomery, Alabama, defying segregation laws. This act of defiance, though not the first of its kind, became a catalyst for widespread protests against racial discrimination in the United States."
+      },
+      {
+        quote: '“When will our consciences grow so tender that we will act to prevent human misery rather than avenge it?”',
+        author: "Eleanor Roosevelt",
+        image: "images/eleanor.jpg",
+        description: "Eleanor Roosevelt (1884-1962) was a prominent American political figure, diplomat, and activist. She is best known as the longest-serving First Lady of the United States, holding that role during her husband Franklin D. Roosevelt's four presidential terms (1933-1945). Beyond her role as First Lady, she was a powerful advocate for civil rights and human rights, notably contributing to the Universal Declaration of Human Rights. "
+      },
   ];
 
   const quoteElement = document.getElementById("quote");
