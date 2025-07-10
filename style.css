@@ -1,0 +1,82 @@
+h1 {
+    color: floralwhite;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: beige;
+    text-align: center;
+    font-size: smaller;
+}
+
+body {
+    margin: 0;
+    background-image: url("../mountain background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+#quote-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#quote {
+    background-color: antiquewhite;
+    padding: 15px;
+    border-radius: 10px;
+    font-style: oblique;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#author {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#description {
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #333;
+}
+
+button {
+    background-color: white;
+    font-size: medium;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #eee; }
+
+/* Fade-in animation */
+.fade {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fade.show {
+    opacity: 1; }
+
+#author-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    margin: 10px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: none; 
+}
