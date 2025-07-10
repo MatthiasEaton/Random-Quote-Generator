@@ -194,3 +194,5 @@ const quotes = [
       fadeElements.forEach(el => el.classList.add("show"));
     }, 300);
   }
+window.generateQuote = generateQuote;
+
